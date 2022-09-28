@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;  
+    color: white;
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #0A0C11;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10%;
+}
+.menu-icon{
+    width: 40px;
+    display: none;
+}
+.logo img{
+    width: 150px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    padding-top: 20px;
+}
+li{
+    padding: 0 20px;
+    color: white;
+    bottom: 0;
+    transition: 0.5s;
+}
+li a{
+    transition: 1s;
+}
+li a:hover{
+    color: #42FF00;
+}
+
+.row-1{
+    display: flex;
+    padding: 100px 5%;
+}
+img{
+    width: 100%;
+}
+.col-p{
+    flex-basis: 50%;
+}
+h1{
+    font-size: 100px;
+}
+p{
+    font-size: 30px;
+}
+button{
+    margin-top: 150px;
+    width: 200px;
+    padding: 12px;
+    background-color: #42FF00;
+    font-size: 20px;
+    color: black;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover{
+    transform: translateY(-20px);
+    box-shadow: 0px 0px 22px #42FF00;
+    color: white;
+}
+button:hover a{
+    color: white;
+}
+button a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #0A0C11;
+}
+
+
+
+.row-2{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 100px 5%;
+}
+img{
+    width: 100%;
+}
+.col-e{
+    flex-basis: 50%;
+}
+
+
+@media  (max-width:1007px){
+    .menu ul{
+        width:100%;
+        background:linear-gradient(#0A0C11,#0A0C11);
+        position:absolute;
+        top:77px;
+        right:0;
+        z-index:2;
+        text-align: center;
+    }
+    .menu ul{
+        display: block;
+        padding: 0;
+        font-size: 20px;
+
+    }
+    .menu ul li{
+        margin-top: 40px;
+        margin-bottom: 25px;
+    }
+    .menu ul li a{
+        color: white;
+
+    }
+    #menulist{
+        overflow:hidden;
+        transition:0.5s;
+    }
+    .menu-icon{
+        padding-top: 15px;
+        width: 40px;
+        display: flex;
+    }
+    .logo img{
+        width: 88px;
+    }
+    nav{
+        padding: 20px 29px;
+    }
+
+
+    .row-1{
+        display: flex;
+        flex-direction: column;
+        padding: 50px 5%;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+    p{
+        font-size: 15px;
+    }
+    button{
+        font-size: 15px;
+        margin-top: 90px;
+    }
+
+
+    .row-2{
+        display: flex;
+        flex-direction: column;
+        padding: 50px 5%;
+    }
+}
